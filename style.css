@@ -87,7 +87,8 @@ ul li {
 .publication-link {
     width: 95%;
     padding-left: 5%;
-    font-size: 90%;
+    font-size: 1.3em;
+    color: #000;
 }
 .video-section {
     display: flex;
@@ -131,5 +132,10 @@ footer {
     }
     .video-title p {
         font-size: 1.3em;
+    }
+    .publication-link {
+        width: 95%;
+        padding-left: 5%;
+        font-size: 90%;
     }
 }
