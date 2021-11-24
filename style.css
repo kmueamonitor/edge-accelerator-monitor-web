@@ -1,0 +1,135 @@
+body, p, a, button, div, h1, h2, h3, h4, h5, span{
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto Light";
+}
+a {
+    color: #4a4a4a;
+}
+.header {
+    width: 90%;
+    padding: 40px 5% 20px 5%;
+    margin-bottom: 60px;
+    background: #C0BCDD;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 3px 5px #c3c3c3;
+}
+.header-title {
+    font-size: 2em;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+}
+.header-contact {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #fff;
+}
+.section-div {
+    width: 90%;
+    margin: 0 5% 50px 5%;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #000;
+}
+h4 {
+    font-size: 2.2em;
+}
+.section-div h5 {
+}
+.section-div img {
+    width: 40%;
+    margin: 20px 0;
+}
+.documentation {
+    margin-top: 20px;
+    border: 1px solid #000;
+    padding-top: 0 !important;
+}
+.section-content {
+    padding-top: 20px;
+}
+.section-content ul {
+    padding: 15px 0;
+    margin-bottom: 20px;
+}
+ul li {
+    list-style-type: square;
+    font-size: 1.8em;
+}
+.section-title {
+    font-size: 2em;
+    font-weight: bold;
+    margin: 0 0 10px 40px;
+    width: max-content;
+    text-decoration: underline 1px;
+    text-underline-position: under;
+    border-bottom: 1px solid;
+    padding-bottom: 5px;
+}
+.flex-div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    width: 100%;
+    padding-left: 15px;
+}
+.section-text {
+    padding: 15px;
+    width: 40%;
+    word-break: keep-all;
+    height: fit-content;
+    font-size: 1.5em;
+}
+.publication-link {
+    width: 95%;
+    padding-left: 5%;
+    font-size: 90%;
+}
+.video-section {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    gap: 10%;
+    width: 100%;
+}
+.video-div {
+    display: flex;
+    width: 30%;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+.video-title p {
+    font-weight: bold;
+    font-size: 1.8em;
+    margin: 0 10px 15px 0;
+    display: inline-block;
+}
+footer {
+    width: 90%;
+    height: 200px;
+    padding: 0 5%;
+    background: #C0BCDD;
+}
+/*화면 크기 작아졌을때 텍스트 크기 조절*/
+@media (max-width: 1440px) {
+    h4 {
+        font-size: 30px;
+    }
+    .section-title {
+        font-size: 25px;
+    }
+    .section-text {
+        font-size: 18px;
+    }
+    ul li {
+        font-size: 1.3em;
+    }
+    .video-title p {
+        font-size: 1.3em;
+    }
+}
