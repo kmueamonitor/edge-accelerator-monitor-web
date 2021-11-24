@@ -1,0 +1,99 @@
+body, p, a, button, div, h1, h2, h3, h4, h5, span{
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto Light";
+}
+a {
+    color: #4a4a4a;
+}
+.header {
+    width: 90%;
+    padding: 40px 5% 20px 5%;
+    margin-bottom: 60px;
+    background: #C0BCDD;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 3px 5px #c3c3c3;
+}
+.header-title {
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+}
+.header-contact {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #fff;
+}
+.section-div {
+    width: 90%;
+    margin: 0 5% 50px 5%;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #000;
+}
+h4 {
+    font-size: 25px;
+}
+.section-div h5 {
+}
+.section-div img {
+    width: 40%;
+    margin: 20px 0;
+}
+.section-content {
+    padding-top: 20px;
+}
+.section-content ul {
+    /*border: 1px solid #000;*/
+    padding: 15px 0;
+    margin-bottom: 20px;
+}
+ul li {
+    list-style-type: square;
+}
+.section-title {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 0 0 10px 40px;
+}
+.flex-div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    /*border-top: 1px solid #000;*/
+    padding-left: 15px;
+}
+.section-text {
+    padding: 15px;
+    width: 50%;
+    word-break: keep-all;
+    height: fit-content;
+}
+.video-section {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+}
+.video-div {
+    display: flex;
+    flex-direction: column;
+    padding-left: 50px;
+    margin-bottom: 50px;
+}
+.video-div p {
+    font-size: 20px;
+    margin: 0 10px 15px 0;
+    display: inline-block;
+}
+footer {
+    width: 90%;
+    height: 200px;
+    padding: 0 5%;
+    background: #C0BCDD;
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="./src/style.css">
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900italic,900' rel='stylesheet' type='text/css'>
+    <title>Edge Accelerator Monitor</title>
+</head>
+<body>
+    <div class="header">
+        <p class="header-title">Edge Accelerator Monitor</p>
+        <p class="header-contact">Contact. barkjungae@kookmin.ac.kr</p>
+    </div>
+    <div class="section-div">
+        <h4>Documentation</h4>
+        <div class="section-content">
+            <ul>
+                <li class="section-title">Challenges</li>
+                <div class="flex-div">
+                    <img src="./public/challenges.png" alt="challengesImg">
+                    <div class="section-text">
+                        <p>Data processing is fast because the edge computing environment is close to the source.</p>
+                        <p>Also, it is decentralized, so resources are located globally.</p>
+                        <p>However, it is difficult to manage edge resources.</p>
+                        <br>
+                        <p>So use the kubernetes.</p>
+                        <p>kubernetes is a well-established central resource management platform.</p>
+                        <p>Kubernetes makes it easy to deploy applications using containers.</p>
+                        <p>However, Kubernetes has limited support for resource information.</p>
+                        <p>The project implemented an automatic edge accelerator hardware detector for Kubernetes.</p>
+                        <p>This will provide a wealth of hardware information for the kubernetes scheduler.</p>
+                    </div>
+                </div>
+            </ul>
+            <ul>
+                <li class="section-title">Implementation</li>
+                <div class="flex-div">
+                    <img src="./public/implementation_image1.png" alt="">
+                    <div class="section-text">
+                        <p>The system was implemented using real devices NVIDIA TX1, TX2, Nano, Xavier, and Google Coral tpu with Raspberry Pi 4.</p>
+                        <p>The module for the auto accelerator detector used the hardware information extractor container image.</p>
+                        <p>And deployed an auto-detector container using Daemonset and used ServiceAccount to automatically label hardware information.</p>
+                    </div>
+                </div>
+                <div class="flex-div" style="border: none;">
+                    <img src="./public/implementation_image3.png" alt="">
+                    <div class="section-text">
+                        <p>Hardware driver version, model name, and resource information were extracted through commands and files, and it is automatically labeled and displayed like this.</p>
+                    </div>
+                </div>
+            </ul>
+            <ul>
+                <li class="section-title">Futer Work</li>
+                <div class="flex-div">
+                    <img src="./public/futer_work_image.png" alt="">
+                    <div class="section-text">
+                        <p>The project was able to extract hardware information by developing the current hardware monitor module, and will develop a workload character analysis module to characterize workloads such as DNN inference.</p>
+                        <br>
+                        <p>Therefore, it will reduce the workload by improving the existing limited scheduling function.</p>
+                        <p>So, it can cover various workloads, and will measure and compare the performance.</p>
+                    </div>
+                </div>
+            </ul>
+        </div>
+    </div>
+    <div class="section-div">
+        <h4>Publication</h4>
+        <div class="section-content">
+
+        </div>
+    </div>
+    <div class="section-div">
+        <h4>Demo Video</h4>
+        <div class="section-content video-section">
+            <div class="video-div">
+                <div class="video-title english-demo-title"><p>ENGLISH </p><a href="https://youtu.be/0RmM_pjYL1Y">[Youtube URL]</a></div>
+                <iframe width="560" height="315"
+                        src="https://www.youtube-nocookie.com/embed/0RmM_pjYL1Y"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+            </div>
+            <div class="video-div">
+                <div class="video-title"><p>KOREAN </p><a href="https://youtu.be/UkdAr9renxQ">[Youtube URL]</a></div>
+                <iframe width="560" height="315"
+                        src="https://www.youtube-nocookie.com/embed/UkdAr9renxQ"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+    <div class="section-div">
+        <h4>Source code & Docker image</h4>
+        <ul>
+            <li>Github URL : <a href="https://github.com/kmu-bigdata/edge-accelerator-monitor">https://github.com/kmu-bigdata/edge-accelerator-monitor</a></li>
+            <li>Dockerhub URL : <a href="https://hub.docker.com/r/kmubigdata/edge-accelerator-monitor">https://hub.docker.com/r/kmubigdata/edge-accelerator-monitor</a></li>
+        </ul>
+    </div>
+    <Footer>
+    </Footer>
+</body>
+</html>
