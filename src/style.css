@@ -115,6 +115,13 @@ footer {
     height: 200px;
     padding: 0 5%;
     background: #C0BCDD;
+    text-align: center;
+}
+footer h5 {
+    font-size: 1.5em;
+    color: #fff;
+    padding-top: 85px;
+    font-weight: bold;
 }
 /*화면 크기 작아졌을때 텍스트 크기 조절*/
 @media (max-width: 1440px) {
@@ -132,10 +139,5 @@ footer {
     }
     .video-title p {
         font-size: 1.3em;
-    }
-    .publication-link {
-        width: 95%;
-        padding-left: 5%;
-        font-size: 90%;
     }
 }
